@@ -5,8 +5,8 @@ export default Ember.Route.extend({
    return this.store.findAll('question');
  },
  actions: {
-  addQuestion3(params) {
-    var newQuestion = { this.store.createRecord('question', params);
+  addQuestion3(params){
+    var newQuestion =  this.store.createRecord('question', params);
       newQuestion.save(); //This sends the new rental to Firebase and stores it there. Fin.
       this.transitionTo('index');
     }
