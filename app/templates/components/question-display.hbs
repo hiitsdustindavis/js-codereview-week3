@@ -1,9 +1,6 @@
 <h1>Question Display HBS</h1>
 <li>
-  <p><strong>Question:</strong> {{question.question}}</p>
-  <p><strong>Author:</strong>{{question.author}}</p>
-  <p><strong>Notes:</strong> {{question.notes}}</p>
-  <p><strong>Answer:</strong> {{question.answer}}</p>
+  {{#link-to 'questions' question.id}}<p><strong>Question:</strong> {{question.question}}</p>{{/link-to}}
 </li>
-<button {{action 'deleteQuestion' question}}>Delete</button>
-{{question-edit update='update'}}
+<!-- <button {{action 'deleteQuestion' question}}>Delete</button>
+{{question-edit update='update'}} -->
