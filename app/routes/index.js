@@ -9,6 +9,10 @@ export default Ember.Route.extend({
     var newQuestion =  this.store.createRecord('question', params);
       newQuestion.save(); //This sends the new rental to Firebase and stores it there. Fin.
       this.transitionTo('index');
+    },
+    destroyQuestion(question) {
+      question.destroyRecord();
+      this.transitionTo('index');
     }
   }
 });
