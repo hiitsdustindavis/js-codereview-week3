@@ -2,7 +2,7 @@
 <ul>
   {{#each model as |question|}}
      <li>
-       {{question-display question=question destroyQuestion='destroyQuestion'}}
+       {{question-display question=question update="update" destroyQuestion='destroyQuestion'}}
      </li>
   {{/each}}
 </ul>
