@@ -1,0 +1,17 @@
+{ "questions": [{
+    "author": "Veruca Salt",
+    "question": "Where do babies come from?",
+    "notes": "Birds and bees",
+    "answer": "The Stork"
+  }, {
+    "author": "Haddaway",
+    "question": "What is Love?",
+    "notes": "Baby don't hurt me",
+    "answer": "It's only a feeling."
+  }, {
+    "author": "Charles Barkley",
+    "question": "Where have all the cowboys gone",
+    "notes": "Bjork",
+    "answer": "Read a book"
+  }]
+}
