@@ -1,0 +1,23 @@
+{{#if addNewQuestion}}
+  <h1>New Question</h1>
+    <form>
+      <div class="form-group">
+        <label for="question">Question</label>
+        {{input value=question  id="question"}}
+      </div>
+
+      <div class="form-group">
+        <label for="author">Author</label>
+        {{input value=author id="author"}}
+      </div>
+
+      <div class="form-group">
+        <label for="notes">Notes</label>
+        {{input value=notes id="notes"}}
+      </div>
+
+      <button {{action 'addQuestion1'}}>Save</button> <!--This is the start to our Action up, this click starts the process of saving the new rental to the data base. -->
+    </form>
+{{else}}
+  <button {{action 'newQuestionFormShow'}}>New Question</button>
+{{/if}}
