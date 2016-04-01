@@ -16,7 +16,12 @@
         {{input value=notes id="notes"}}
       </div>
 
-      <button {{action 'addQuestion1'}}>Save</button> <!--This is the start to our Action up, this click starts the process of saving the new rental to the data base. -->
+      <div class="form-group">
+        <label for="answer">Answer</label>
+        {{input value=answer id="answer"}}
+      </div>
+
+      <button {{action 'addQuestion1' question}}>Save</button> <!--This is the start to our Action up, this click starts the process of saving the new rental to the data base. -->
     </form>
 {{else}}
   <button {{action 'newQuestionFormShow'}}>New Question</button>
