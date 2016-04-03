@@ -13,9 +13,10 @@ export default Ember.Component.extend({
         notes: this.get('notes'),
         answer: this.get('answer')
       };
-      console.log('question edit here:' + question);
 
       this.set('editQuestion', false);
+
+
       this.sendAction('update', question, params);
     }
   }

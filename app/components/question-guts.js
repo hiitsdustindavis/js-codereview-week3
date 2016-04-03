@@ -4,7 +4,12 @@ export default Ember.Component.extend({
   actions: {
 
     update(question, params){
-      console.log('question guts here:' + question);
+      Object.keys(params).forEach(function(key) {
+        if(params[key]!==undefined) {
+          question.set(key,params[key]);
+        }
+      });
+      console.log(params);
       this.sendAction('update', question, params);
     },
     deleteQuestion(question) {

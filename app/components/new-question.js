@@ -12,7 +12,7 @@ export default Ember.Component.extend({
         query: this.get('query'),
         notes: this.get('notes'),
         answer: this.get('answer')
-      };
+      }; 
       this.set('addNewQuestion', false);
       this.sendAction('addQuestion2', params);
     }

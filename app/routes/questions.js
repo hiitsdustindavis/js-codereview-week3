@@ -6,14 +6,15 @@ export default Ember.Route.extend({
   },
   actions: {
     update(question, params) {
-      // console.log(question);
-      Object.keys(params).forEach(function (key) {
-        if(params[key]!==undefined) {
-          question.set(key,params[key]);
-        }
+      console.log('wow cool ' + params);
+      debugger;
+      // Object.keys(params).forEach(function (key) {
+      //   if(params[key]!==undefined) {
+      //     question.set(key,params[key]);
+      //   }
         question.save();
         this.transitionTo('index');
-      });
+      // });
     },
     destroyQuestion(question) {
       question.destroyRecord();
