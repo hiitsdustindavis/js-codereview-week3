@@ -9,7 +9,7 @@ export default Ember.Component.extend({
           question.set(key,params[key]);
         }
       });
-      console.log(params);
+      
       this.sendAction('update', question, params);
     },
     deleteQuestion(question) {

@@ -13,5 +13,12 @@
     "query": "Where have all the cowboys gone",
     "notes": "Bjork",
     "answer": "Read a book"
-  }]
+  }],
+  "answers": [{
+    "answerAuthor": "Brian Kelly",
+    "answerInput": "Love is only a feeling"
+  }, {
+    "answerAuthor": "Clarp",
+    "answerInput": "I want to believe."
+    }]
 }

@@ -1,6 +1,6 @@
 <h2>This is the Index</h2>
 <ul>
-  {{#each model as |question|}}
+  {{#each model.question as |question|}}
      <li>
        {{question-display question=question destroyQuestion='destroyQuestion'}}
      </li>
