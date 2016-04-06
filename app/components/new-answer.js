@@ -8,8 +8,9 @@ export default Ember.Component.extend({
     },
     addAnswer1() {
       var params = {
-        answerInput: this.get('answerInput'),
-        answerAuthor: this.get('answerAuthor')
+        answerinput: this.get('answerinput'),
+        answerauthor: this.get('answerauthor'),
+        question: this.get('question')
       };
       // console.log(params);
       this.set('addNewAnswer', false);

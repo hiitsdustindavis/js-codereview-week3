@@ -2,8 +2,8 @@
 <ul>
   {{#each model.question as |question|}}
      <li>
-       {{question-display question=question destroyQuestion='destroyQuestion'}}
+       {{#link-to 'questions' question.id}}{{question.query}}{{/link-to}}
      </li>
   {{/each}}
 </ul>
-{{new-question addQuestion2="addQuestion3"}}
+{{new-question addQuestion2="addQuestion3" question=model}}

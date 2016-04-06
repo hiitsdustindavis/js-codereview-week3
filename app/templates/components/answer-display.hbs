@@ -2,8 +2,7 @@
 
 {{#each model.answer as |answer|}}
   <li>
-    <p>{{question.answer.answerInput}}</p>
-    <p>{{question.answer.answerAuthor}}</p>
+    <p>{{answer.answerInput}}</p>
+    <p>{{answer.answerAuthor}}</p>
   </li>
 {{/each}}
-{{new-answer addAnswer2="addAnswer3" answer=answer}}

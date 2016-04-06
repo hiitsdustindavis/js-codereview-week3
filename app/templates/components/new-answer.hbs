@@ -2,16 +2,16 @@
   <h1>New Answer</h1>
     <form>
       <div class="form-group">
-        <label for="answerInput">Answer</label>
-        {{input value=answerInput id="answerInput"}}
+        <label for="answerauthor">Answer</label>
+        {{input value=answerauthor id="answerauthor"}}
       </div>
 
       <div class="form-group">
-        <label for="answerAuthor">Author</label>
-        {{input value=answerAuthor id="answerAuthor"}}
+        <label for="answerinput">Author</label>
+        {{input value=answerinput id="answerinput"}}
       </div>
 
-      <button {{action 'addAnswer1' question}}>Save</button>
+      <button {{action 'addAnswer1'}}>Save</button>
     </form>
 {{else}}
   <button {{action 'newAnswerFormShow'}}>New Answer</button>

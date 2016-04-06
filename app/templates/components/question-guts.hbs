@@ -2,7 +2,6 @@
   <p><strong>Question:</strong> {{question.query}}</p>
   <p><strong>Author:</strong>{{question.author}}</p>
   <p><strong>Notes:</strong> {{question.notes}}</p>
-  <p><strong>Answer:</strong> {{question.answer.answerInput}}</p>
 </li>
 <button {{action 'deleteQuestion' question}}>Delete</button>
 {{question-edit question=question update='update'}}
