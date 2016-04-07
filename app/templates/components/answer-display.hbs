@@ -1,8 +1,8 @@
 <h1>Answer Display HBS</h1>
 
-{{#each model.answer as |answer|}}
+{{#each question.answers as |answer|}}
   <li>
-    <p>{{answer.answerInput}}</p>
-    <p>{{answer.answerAuthor}}</p>
+    <p>author{{answer.answerAuthor}}</p>
+    <p>input{{answer.answerInput}}</p>
   </li>
 {{/each}}
