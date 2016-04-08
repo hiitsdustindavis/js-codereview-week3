@@ -1,8 +1,10 @@
-<h1>Answer Display HBS</h1>
+<h3>Answer {{question.authorfirst}}'s Question</h3>
 
-{{#each question.answers as |answer|}}
-  <li>
-    <p>author{{answer.answerAuthor}}</p>
-    <p>input{{answer.answerInput}}</p>
+<ul>
+  {{#each question.answers as |answer|}}
+  <li class="answer-tile">
+    <p><i class="fa fa-user"></i> {{answer.answerAuthor}}</p>
+    <p>"{{answer.answerInput}}"</p>
   </li>
-{{/each}}
+  {{/each}}
+</ul>

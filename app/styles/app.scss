@@ -148,3 +148,47 @@ input {
   justify-content: space-between;
   width: 12rem;
 }
+.new-answer-form {
+  margin: 0 0 0 1.6rem;
+}
+.answer-display {
+
+}
+.answer-tile {
+  margin: 0 0 0 0.8rem;
+  ul {
+    margin: 0 0 0 0.8rem;
+    li {
+      display: flex;
+      align-items: center;
+      // padding: 1rem;
+      border: 2px solid lightgray;
+      width: auto;
+      margin: 1rem 0 0 0;
+      p {
+        &:first-child {
+          text-align: center;
+          background-color: lightgray;
+          width: 10%;
+          height: 100%;
+          padding: 1rem 0.5rem;
+          display: flex;
+          flex-direction: column;
+          font-size: 0.8rem;
+          i {
+            font-size: 2rem;
+            margin: 0.2rem;
+          }
+        }
+        &:last-child {
+          margin: 0 0 0 0.8rem;
+          font-size: 1.2rem;
+          width: 90%;
+          color: gray;
+          font-weight: lighter;
+          font-style: italic;
+        }
+      }
+    }
+  }
+}
