@@ -4,7 +4,12 @@ export default Ember.Component.extend({
   fullName: Ember.computed('question.authorfirst', 'question.authorlast', function() {
     return this.get('question.authorfirst') + " " + this.get('question.authorlast');
   }),
+  favoriteQuestion: Ember.inject.service(),
+
   actions: {
+    addFavQuestion(question) {
+      this.get('favoriteQuestion').add(question);
+    },
     update(question, params){
       Object.keys(params).forEach(function(key) {
         if(params[key]!==undefined) {

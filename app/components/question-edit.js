@@ -13,9 +13,11 @@ export default Ember.Component.extend({
         query: this.get('query'),
         notes: this.get('notes'),
       };
-
       this.set('editQuestion', false);
-
+      this.get('authorfirst', ''),
+      this.get('authorlast', ''),
+      this.get('query', ''),
+      this.get('notes', ''),
 
       this.sendAction('update', question, params);
     }
