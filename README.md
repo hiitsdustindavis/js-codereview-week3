@@ -19,10 +19,12 @@ You will need the following things properly installed on your computer.
 
 ## Installation
 
-* `git clone <repository-url>` this repository
+* `git clone https://github.com/hiitsdustindavis/js-codereview-week3` this repository
 * change into the new directory
 * `npm install`
 * `bower install`
+* `ember install ember-cli-sass`
+* `npm install --save ember-cli-sass`
 
 ## Running / Development
 
@@ -42,15 +44,6 @@ Make use of the many generators for code, try `ember help generate` for more det
 
 * `ember build` (development)
 * `ember build --environment production` (production)
-
-### Deploying
-
-* To run this app clone the repo [here](https://github.com/hiitsdustindavis/js-codereview-week3)
-* In the top of the local repo directory run
-  * `npm intall` Installs Node Packages
-  * `bower install` Installs front-end Packages
-  * `ember s` Starts the Server
-* Your browser should open the app. If not enter `localhost:4200` into the url bar.
 
 ## Further Reading / Useful Links
 
