@@ -4,6 +4,7 @@ export default Ember.Route.extend({
   model(params) {
     return this.store.findRecord('question', params.question_id);
   },
+  favoriteQuestions: Ember.inject.service(),
   actions: {
     addAnswer3(params){
       var newAnswer = this.store.createRecord('answer', params);
@@ -16,13 +17,8 @@ export default Ember.Route.extend({
         // this.transitionTo('questions');
       },
     update(question, params) {
-      // debugger;
-      // Object.keys(params).forEach(function (key) {
-      //   if(params[key]!==undefined) {
-      //     question.set(key,params[key]);
-      //   }
         question.save();
-        this.transitionTo('index');
+        // this.transitionTo('index');
       // });
     },
     destroyQuestion(question) {
