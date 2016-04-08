@@ -1,7 +1,6 @@
 <li>
   <p><strong>Question:</strong> {{question.query}}</p>
-  <p><strong>First Name:</strong> {{question.authorfirst}}</p>
-  <p><strong>Last Name:</strong> {{question.authorlast}}</p>
+  <p><strong>Author:</strong> {{fullName}}</p>
   <p><strong>Notes:</strong> {{question.notes}}</p>
 </li>
 <button {{action 'deleteQuestion' question}}>Delete</button>

@@ -1,6 +1,9 @@
 import Ember from 'ember';
 
 export default Ember.Component.extend({
+  fullName: Ember.computed('question.authorfirst', 'question.authorlast', function() {
+    return this.get('question.authorfirst') + " " + this.get('question.authorlast');
+  }),
   actions: {
     update(question, params){
       Object.keys(params).forEach(function(key) {
