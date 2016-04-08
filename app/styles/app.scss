@@ -1,7 +1,58 @@
 * {
   border: none;
   list-style: none;
+  text-decoration: none;
+  color: black;
   margin: 0;
   padding: 0;
   font-family: 'Work Sans', sans-serif;
+}
+
+.wrapper {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+header, footer {
+  display: flex;
+  align-items: center;
+  height: 4rem;
+  width: 100%;
+  background-color: lightgray;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  p {
+    margin: 0 0 0 2rem;
+  }
+  a, h2, p {
+    color: white;
+    transition: all 0.1s ease-in-out;
+    &:hover {
+      color: tomato;
+      cursor: pointer;
+    }
+  }
+}
+.container {
+  width: 960px;
+  margin: 0 auto;
+}
+section {
+  margin: 1rem 0;
+  flex: 1;
+}
+
+button {
+  padding: 0.5rem 0.8rem;
+  color: white;
+  font-size: 0.8rem;
+  transition: all 0.15s ease-in-out;
+  &:hover {
+    background-color: tomato;
+    cursor: pointer;
+  }
 }

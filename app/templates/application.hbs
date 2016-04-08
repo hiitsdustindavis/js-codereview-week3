@@ -1,3 +1,20 @@
-{{#link-to 'index'}}<h2 id="title">Q&amp;A</h2>{{/link-to}}
+<div class="wrapper">
+  <header>
+    <div class="container">
+      <div class="nav">
+        {{#link-to 'index'}}<h2 id="title">Q&amp;A</h2>{{/link-to}}
+        <p>About</p>
+        <p>Contact</p>
+      </div>
+    </div>
+  </header>
 
-{{outlet}}
+  <section>
+    <div class="container">
+      {{outlet}}
+    </div>
+  </section>
+
+  <footer>
+  </footer>
+</div>
