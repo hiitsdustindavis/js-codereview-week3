@@ -1,6 +1,6 @@
 <h5>This is the fav-questions-display component</h5>
 {{#each favoriteQuestions.questions as |question|}}
   <p>
-    {{question.query}}
+    {{question.query}} -- {{question.authorfirst}} {{question.authorlast}}
   </p>
 {{/each}}

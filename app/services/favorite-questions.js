@@ -5,5 +5,8 @@ export default Ember.Service.extend({
 
   add(question) {
     this.get('questions').pushObject(question);
-  }
+  },
+  favCount: Ember.computed('questions.[]', function(){
+    return this.get('questions.length');
+  })
 });
