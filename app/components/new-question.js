@@ -8,7 +8,8 @@ export default Ember.Component.extend({
     },
     addQuestion1() {
       var params = {
-        author: this.get('author'),
+        authorfirst: this.get('authorfirst'),
+        authorlast: this.get('authorlast'),
         query: this.get('query'),
         notes: this.get('notes'),
       }; console.log(params);

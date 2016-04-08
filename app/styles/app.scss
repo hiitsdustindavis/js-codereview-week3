@@ -28,7 +28,21 @@ header, footer {
   p {
     margin: 0 0 0 2rem;
   }
-  a, h2, p {
+  h2 {
+    font-size: 1.8rem;
+    border-left: 1px solid white;
+    border-right: 1px solid white;
+    padding: 1rem;
+    color: white;
+    transition: all 0.1s ease-in-out;
+    &:hover {
+      background-color: tomato;
+      border-left: 1px solid lightgray;
+      border-right: 1px solid lightgray;
+      cursor: pointer;
+    }
+  }
+  a, p {
     color: white;
     transition: all 0.1s ease-in-out;
     &:hover {
@@ -47,6 +61,7 @@ section {
 }
 
 button {
+  margin: 0.6rem 0 0 0;
   padding: 0.5rem 0.8rem;
   color: white;
   font-size: 0.8rem;
@@ -55,4 +70,11 @@ button {
     background-color: tomato;
     cursor: pointer;
   }
+}
+
+input {
+  border: 1px solid lightgray;
+  height: 1rem;
+  color: tomato;
+  font-size: 0.8rem;
 }

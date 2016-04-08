@@ -8,10 +8,10 @@ export default Ember.Component.extend({
     },
     update(question) {
       var params = {
+        authorfirst: this.get('authorfirst'),
+        authorlast: this.get('authorlast'),
         query: this.get('query'),
-        author: this.get('author'),
         notes: this.get('notes'),
-        answer: this.get('answer')
       };
 
       this.set('editQuestion', false);
