@@ -1,7 +1,11 @@
-# Js-codereview-week3
+# Js-codereview-week3/4
 
-This README outlines the details of collaborating on this Ember application.
-A short introduction of this app could easily go here.
+The purpose of this exercise is to display my ability to work with EmberJS. I've built a question and answer app to meet the following assignment criteria:
+* The project contains at least one functioning computed property.
+* A service has been implemented successfully.
+* At least one custom helper is being used to format data.
+* Previous standards have been met.
+* The application works as expected.
 
 ## Prerequisites
 
@@ -41,7 +45,12 @@ Make use of the many generators for code, try `ember help generate` for more det
 
 ### Deploying
 
-Specify what it takes to deploy your app.
+* To run this app clone the repo [here](https://github.com/hiitsdustindavis/js-codereview-week3)
+* In the top of the local repo directory run
+  * `npm intall` Installs Node Packages
+  * `bower install` Installs front-end Packages
+  * `ember s` Starts the Server
+* Your browser should open the app. If not enter `localhost:4200` into the url bar.
 
 ## Further Reading / Useful Links
 
@@ -50,4 +59,3 @@ Specify what it takes to deploy your app.
 * Development Browser Extensions
   * [ember inspector for chrome](https://chrome.google.com/webstore/detail/ember-inspector/bmdblncegkenkacieihfhpjfppoconhi)
   * [ember inspector for firefox](https://addons.mozilla.org/en-US/firefox/addon/ember-inspector/)
-
