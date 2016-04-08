@@ -1,7 +1,10 @@
-<li>
-  <p><strong>Question:</strong> {{question.query}}</p>
+<p class="query-questions">{{question.query}}</p>
+<div class="question-questions">
   <p><strong>Author:</strong> {{fullName}}</p>
   <p><strong>Notes:</strong> {{question.notes}}</p>
-</li>
-<button {{action 'deleteQuestion' question}}>Delete</button>
-{{question-edit question=question update='update'}}
+  <div class="question-buttons-questions">
+    <button {{action 'deleteQuestion' question}}>Delete</button>
+    {{question-edit question=question update='update'}}
+  </div>
+</div>
+<hr>

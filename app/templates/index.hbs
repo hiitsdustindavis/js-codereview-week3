@@ -1,9 +1,8 @@
-<h2>This is the Index</h2>
 <ul>
   {{#each model.question as |question|}}
      <li class="questions-index">
        <span class="hot-question">{{hotQuestion question}}</span>
-       <span>{{#link-to 'questions' question.id}}{{question.query}}{{/link-to}}</span>
+       <span class="query-index">{{#link-to 'questions' question.id}}{{question.query}}{{/link-to}}</span>
      </li>
   {{/each}}
 </ul>

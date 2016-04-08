@@ -8,6 +8,11 @@
   font-family: 'Work Sans', sans-serif;
 }
 
+hr {
+  margin: 1rem 0;
+  background-color: tomato;
+  height: 1px;
+}
 .wrapper {
   height: 100vh;
   display: flex;
@@ -67,7 +72,19 @@ section {
       color: tomato;
       font-weight: bolder;
       font-size: 1.8rem;
+      margin: 0.6rem 0.6rem 0 0;
     }
+  }
+}
+.query-index {
+  margin: 0.6rem 0 0 0;
+  font-size: 1.8rem;
+  transition: all 0.3s ease-in-out;
+  font-style: normal;
+  padding: 0.2rem 0.6rem;
+  &:hover {
+  background-color: lightgray;
+  padding: 0.2rem 0.6rem;
   }
 }
 button {
@@ -87,4 +104,21 @@ input {
   height: 1rem;
   color: tomato;
   font-size: 0.8rem;
+}
+
+//QUESTIONS ROUTE
+.query-questions {
+  font-size: 2rem;
+  color: tomato;
+  font-style: italic;
+  font-weight: lighter;
+  margin: 0 0 0.8rem 0;
+}
+.question-questions {
+  margin: 0 0 0 0.8rem;
+}
+.question-buttons-questions {
+  display: flex;
+  justify-content: space-between;
+  width: 12rem;
 }
