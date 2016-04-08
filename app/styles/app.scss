@@ -7,7 +7,12 @@
   padding: 0;
   font-family: 'Work Sans', sans-serif;
 }
-
+h3 {
+  color: tomato;
+  font-weight: lighter;
+  font-style: italic;
+  font-size: 1.4rem;
+}
 hr {
   margin: 1rem 0;
   background-color: tomato;
@@ -142,11 +147,15 @@ input {
 }
 .question-questions {
   margin: 0 0 0 0.8rem;
+  button {
+    margin: 0.6rem 0 0 0;
+  }
 }
-.question-buttons-questions {
-  display: flex;
-  justify-content: space-between;
-  width: 12rem;
+.question-edit {
+  margin: 0.5rem 0 0 0;
+  button {
+    margin: 0;
+  }
 }
 .new-answer-form {
   margin: 0 0 0 1.6rem;
@@ -191,4 +200,22 @@ input {
       }
     }
   }
+}
+.fav-question-wrapper {
+  display: flex;
+  // justify-content: space-between;
+  // flex-direction: column;
+  flex-wrap: wrap;
+  width: auto;
+  // border: 1px solid purple;
+}
+.fav-question-tile {
+  margin: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 23%;
+  padding: 1rem;
+  border: 2px solid lightgray;
 }

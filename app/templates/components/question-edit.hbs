@@ -1,4 +1,5 @@
-{{#if editQuestion}}
+<div class="question-edit">
+  {{#if editQuestion}}
   <h1>Edit Question</h1>
   <form>
     <div class="form-group">
@@ -25,4 +26,5 @@
   </form>
   {{else}}
   <button {{action 'editQuestion'}}>Edit Question</button>
-{{/if}}
+  {{/if}}
+</div>

@@ -2,10 +2,10 @@
 <div class="question-questions">
   <p><strong>Author:</strong> {{fullName}}</p>
   <p><strong>Notes:</strong> {{question.notes}}</p>
-  <div class="question-buttons-questions">
+  <!-- <div class="question-buttons-questions"> -->
+  <button {{action 'addToFavs' question}}>Add to Favorites</button>
     <button {{action 'deleteQuestion' question}}>Delete</button>
     {{question-edit question=question update='update'}}
-  </div>
-  <button {{action 'addToFavs' question}}>Add to Favorites</button>
+  <!-- </div> -->
 </div>
 <hr>
